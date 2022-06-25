@@ -1,0 +1,770 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*banner*/
+.fullSlide a{text-decoration:none;color:#333;}
+.fullSlide a:hover{color:#1974A1;}
+/* fullSlide */
+.fullSlide{width:100%;position:relative;height:550px;}
+.fullSlide .bd{margin:0 auto;position:relative;z-index:0;overflow:hidden;}
+.fullSlide .bd ul{width:100% !important;}
+.fullSlide .bd li{width:100% !important;height:100%;overflow:hidden;text-align:center;background:#ff700000 center 0 no-repeat;}
+.fullSlide .bd li a{display:block;height:550px;}
+.fullSlide .hd{width:100%;position:absolute;z-index:1;bottom:0;left:0;height:30px;line-height:30px;}
+.fullSlide .hd ul{text-align:center;}
+.fullSlide .hd ul li{cursor:pointer;display:inline-block;*display:inline;zoom:1;width:42px;height:11px;margin:1px;overflow:hidden;background:#000;filter:alpha(opacity=70);opacity:0.7;line-height:999px;}
+.fullSlide .hd ul .on{background:#f00;}
+.fullSlide .prev,.fullSlide .next{display:block;position:absolute;z-index:100;top:50%;margin-top:-30px;left:5%;z-index:1;width:40px;height:60px;background:url(../images/slider-arrow.png) -126px -137px  no-repeat;cursor:pointer;filter:alpha(opacity=50);opacity:0.5;display:none;}
+/*右箭头*/
+.fullSlide .next{left:auto;right:5%;background-position:-6px -137px;}    /*right:5%;右箭头距离图片5%*/
+
+
+/*内容*/
+/*景区介绍*/
+.introduce{
+	width:100%;
+	height:628px;
+	background-color:#fbf9ed;
+	}
+.introduce_box{
+	width:1200px;
+	}
+.introduce_box_title{
+	width:1200px;
+	height:74px;
+	margin-top:58px;
+	background:url(../images/introduce.png) no-repeat center;
+	}
+video{
+	margin-top:50px;
+	}
+.introduce_box_right{
+	width:548px;
+	height:382px;
+	margin-top:50px;
+	}
+.introduce_box_right>div{
+	width:548px;
+	height:138px;
+	background:url(../images/introduce_pic2.png);
+	}
+.introduce_box_right>h4{
+	font-size:22px;
+	margin-top:25px;
+	}
+.introduce_box_right>p{
+	color:#666px;
+	line-height:24px;
+	margin-top:17px;
+	}
+.look{
+	display:block;
+	width:142px;
+	height:51px;
+	font-size:14px;
+	color:#fff;
+	text-align:center;
+	line-height:51px;
+	margin:25px 63px 0 0;
+	background:url(../images/button.png);
+	}
+.look:hover{
+	cursor:pointer;
+	color:#fff;
+	text-decoration:none;	
+	}
+	
+/*名山风景*/
+.scenery{
+	width:100%;
+	height:895px;
+	background:url(../images/scenery_bg.png) no-repeat center;
+	}
+.scenery_box{
+	width:1200px;
+	}
+.scenery_box_title{
+	width:1200px;
+	height:74px;
+	margin-top:58px;
+	background:url(../images/scenery.png) no-repeat center;
+	}
+.scenery_box_lfet{
+	width:416px;
+	height:560px;
+	margin-top:50px;
+	background:url(../images/scenery_1.png);
+	position:relative;
+	}
+.hover_bg2{
+	width:416px;
+	height:560px;	
+	opacity:0;
+	transition:0.5s;
+	background:#000;
+}
+.scenery_box_lfet a{
+	display:block;
+	text-align:center;
+	font-size:40px;
+	color:#fff;
+	position:absolute;
+	top:160px;
+	left:190px;
+	opacity:0;
+	transition:0.5s;
+}
+.scenery_box_lfet:hover{
+	animation:my_an_1 0.5s linear 0s forwards;
+	}
+
+@keyframes my_an_1{
+	0%{transform:scale(1.035,1.035);}
+	50%{transform:scale(1.06,1.06);}
+	100%{transform:scale(1.09,1.09);}	
+	}	
+.hover_bg2:hover{
+	opacity:0.5;
+	transition:0.5s;
+}
+.scenery_box_lfet:hover a{
+	opacity:1;
+	animation:my_an_1 0.5s linear 0s 1 forwards;
+	transform: scale(1.1,1.1);
+}
+.scenery_box_right{
+	width:760px;
+	height:560px;
+	margin-top:50px;
+	}
+.scenery_box_right>ul{
+	display:flex;
+	display:-wbkit-flex;            /*兼容*/
+	justify-content:space-between;  /*主轴，也就是横向间距均分*/
+	align-content:space-between;    /*副轴，也就是纵向间距均分*/
+	flex-wrap:wrap;                 /*换行*/
+	}
+.scenery_box_right>ul>li{
+	padding-bottom:26px;
+	
+	}
+.pic>li{
+	position:relative;
+}
+.pic_1{
+	width:356px;   
+	height:267px;
+	background:url(../images/scenery_2.png) no-repeat;
+	}
+.pic_2{
+	width:356px;
+	height:267px;
+	background:url(../images/scenery_3.png) no-repeat;
+	}
+.pic_3{
+	width:356px;  
+	height:267px;
+	background:url(../images/scenery_4.png) no-repeat;
+	}
+.pic_4{
+	width:356px;
+	height:267px;
+	background:url(../images/scenery_5.png) no-repeat;
+	}
+
+.pic>li>div{
+	width:356px;
+	height:267px;	
+	opacity:0;
+	transition:0.5s;
+}
+.pic>li>a{
+	display:block;
+	text-align:center;
+	font-size:30px;
+	color:#fff;
+	position:absolute;
+	top:110px;
+	left:130px;
+	opacity:0;
+	transition:0.5s;
+}
+.hover_bg1{
+	background:#000;
+}
+#pic:hover{
+	animation:my_an_1 0.5s linear 0s forwards;
+	}
+
+@keyframes my_an_1{
+	0%{transform:scale(1.035,1.035);}
+	50%{transform:scale(1.06,1.06);}
+	100%{transform:scale(1.09,1.09);}	
+	}
+@-moz-keyframes my_an_1{
+	0%{transform:scale(1.035,1.035);}
+	50%{transform:scale(1.06,1.06);}
+	100%{transform:scale(1.09,1.09);}	
+	}
+@-webkit-keyframes my_an_1{
+	0%{transform:scale(1.035,1.035);}
+	50%{transform:scale(1.06,1.06);}
+	100%{transform:scale(1.09,1.09);}	
+	}
+@-o-keyframes my_an_1{
+	0%{transform:scale(1.035,1.035);}
+	50%{transform:scale(1.06,1.06);}
+	100%{transform:scale(1.09,1.09);}	
+	}	
+.pic>li:hover>div{
+	opacity:0.5;
+	transition:0.5s;
+}
+.pic>li:hover>a{
+	opacity:1;
+	animation:my_an_1 0.5s linear 0s 1 forwards;
+	transform: scale(1.1,1.1);
+}
+.scenery_box_look{
+	width:100%;
+	height:51px;
+	font-size:14px;
+	color:#fff;
+	text-align:center;
+	line-height:51px;
+	margin-top:52px;
+	background:url(../images/button.png) no-repeat center;
+	}
+.scenery_box_look:hover{
+	cursor:pointer;
+	color:#fff;
+	text-decoration:none;	
+	}
+	
+	
+
+
+/*名山资讯*/
+.news{
+	width:100%;
+	height:599px;
+	background:#fbf9ed;
+	}
+.news_box{
+	width:1200px;
+	}
+.news_box_title{
+	width:1200px;
+	height:74px;
+	margin-top:58px;
+	background:url(../images/news.png) no-repeat center;
+	}
+.news_box_lfet{
+	width:229px;
+	height:289px;
+	background:url(../images/news_fb.png);
+	margin-top:30px;
+	margin-left:42px;
+	}
+.news_box_right{
+	width:810px;
+	height:252px;
+	margin-top:50px;
+	overflow:hidden;
+	}	
+.news_box_right li{
+	padding-left:55px;
+	line-height:58px;
+	}
+.num_1{
+	background:url(../images/one.png) no-repeat left;
+	}
+.num_2{
+	background:url(../images/two.png) no-repeat left;
+	}
+.num_3{
+	background:url(../images/there.png) no-repeat left;
+	}
+.num_4{
+	background:url(../images/four.png) no-repeat left;
+	}
+.news_box_look{
+	width:100%;
+	height:51px;
+	font-size:14px;
+	color:#fff;
+	text-align:center;
+	line-height:51px;
+	margin-top:52px;
+	background:url(../images/button.png) no-repeat center;
+	}
+.news_box_look:hover{
+	cursor:pointer;
+	color:#fff;
+	text-decoration:none;	
+	}
+	
+/*名山指南*/
+.guide{
+	width:100%;
+	height:1010px;	background:url(../images/guide_bg.png) no-repeat center;
+	}
+.guide_box{
+	width:1200px;
+	}
+.guide_box_title{
+	width:1200px;
+	height:74px;
+	margin-top:58px;
+	background:url(../images/guide.png) no-repeat center;
+	}
+.guide_box_up{
+	width:1200px;
+	height:454px;
+	margin-top:50px;
+	}
+.guide_box_up_left{
+	width:577px;
+	height:115px;
+	border:1px solid #92211b;
+	}
+.left_color_bg{
+	width:577px;
+	height:68px;
+	text-align:center;
+	line-height:68px;
+	font-size:28px;
+	color:#fff;
+	background:#92211b;
+	position:relative;
+	}
+.left_color_bg>div{
+	width:60px;
+	height:37px;
+	background:url(../images/dc.png);
+	position:absolute;
+	top:17px;
+	left:33px;
+	}
+.guide_box_up_left>p{
+	font-size:18px;
+	text-align:center;
+	line-height:47px;
+	}
+.left_path{
+	width:532px;
+	height:339px;
+	position:relative;
+	}
+.left_path>div{
+	width:33px;
+	height:308px;
+	background:url(../images/lt_1.png);
+	position:absolute;
+	top:30px;
+	left:40px;	
+	}
+.left_path ul{
+	width:468px;
+	height:308px;	
+	position:absolute;
+	top:30px;
+	left:104px;
+	}
+.left_path_one{
+	width:468px;
+	height:65px;
+	line-height:36px;
+	border-bottom:1px solid #ccc;	
+	}
+.left_path_two{
+	width:468px;
+	height:91px;
+	border-bottom:1px solid #ccc;
+	font-size:14px;
+	}
+.left_path_two>p{
+	line-height:50px;
+	font-size:16px;
+	}
+.left_path_there{
+	width:468px;
+	height:59px;
+	border-bottom:1px solid #ccc;
+	line-height:80px;
+	}
+.guide_box_up_right{
+	width:577px;
+	height:115px;
+	border:1px solid #92211b;
+	}
+.right_color_bg{
+	width:577px;
+	height:68px;
+	text-align:center;
+	line-height:68px;
+	font-size:28px;
+	color:#fff;
+	background:#92211b;
+	position:relative;
+	}
+.right_color_bg>div{
+	width:37px;
+	height:37px;
+	background:url(../images/qc.png);
+	position:absolute;
+	top:17px;
+	left:33px;
+	}
+.guide_box_up_right>p{
+	font-size:18px;
+	text-align:center;
+	line-height:47px;
+	}
+.right_path{
+	width:532px;
+	height:339px;
+	position:relative;
+	}
+.right_path>div{
+	width:33px;
+	height:217px;
+	background:url(../images/lt_2.png);
+	position:absolute;
+	top:30px;
+	left:40px;	
+	}
+.right_path ul{
+	width:468px;
+	height:308px;	
+	position:absolute;
+	top:30px;
+	left:104px;
+	}
+.right_path_one{
+	width:468px;
+	height:65px;
+	line-height:36px;
+	border-bottom:1px solid #ccc;	
+	}
+.right_path_two{
+	width:468px;
+	height:91px;
+	border-bottom:1px solid #ccc;
+	font-size:14px;
+	}
+.right_path_two>p{
+	line-height:50px;
+	font-size:16px;
+	}
+.right_path_there{
+	width:468px;
+	height:59px;
+	border-bottom:1px solid #ccc;
+	line-height:80px;
+	}
+.guide_box_down{
+	width:1200px;
+	height:318px;
+	margin-top:20px;
+	}	
+.fire{
+	width:577px;
+	height:315px;
+	border:1px solid #92211b;
+	}
+.fire_color_bg{
+	width:577px;
+	height:68px;
+	text-align:center;
+	line-height:68px;
+	font-size:28px;
+	color:#fff;
+	background:#92211b;
+	}
+	
+.hdjl_box_news{
+	width:525px;
+	padding-left:18px;
+	overflow:hidden;
+	text-align:left;
+	margin-left:30px;
+	
+	}
+.hdjl_box_news>ul{
+	display:flex;
+	}
+.hdjl_box_news>ul>li{
+	line-height:40px;
+	list-style:disc;
+	color:#cccccc;
+	text-align:left;
+	flex:1;	
+	}
+.hdjl_box_news>ul>li>span{
+	color:#333;
+	}	
+.map{
+	width:580px;
+	height:315px;
+	background:url(../images/map.png);
+	}
+	
+	
+	
+	
+	
+/*在线预定*/
+.schedule{
+	width:100%;
+	height:573px;
+	background:#fbf9ed;
+	}
+.schedule_box{
+	width:1200px;
+	}
+.schedule_box_title{
+	width:1200px;
+	height:74px;
+	margin-top:58px;
+	background:url(../images/schedule.png) no-repeat center;
+	}
+.schedule_box_left{
+	width:579px;
+	height:332px;
+	background:#f15e0d;
+	margin-top:50px;
+	text-align:center;
+	line-height:36px;
+	font-size:30px;
+	color:#fff;
+	}
+.schedule_box_left:hover{
+	animation:my_an_2 0.5s linear 0s;
+	cursor:pointer;
+	}
+@keyframes my_an_2{
+	0%{transform:translate(0px,0x);}
+	50%{transform:translate(30px,0px);}
+	100%{transform:translate(0px,0x);}
+	}
+@-moz-keyframes my_an_2{
+	0%{transform:translate(0px,0x);}
+	50%{transform:translate(30px,0px);}
+	100%{transform:translate(0px,0x);}
+	}
+@-webkit-keyframes my_an_2{
+	0%{transform:translate(0px,0x);}
+	50%{transform:translate(30px,0px);}
+	100%{transform:translate(0px,0x);}
+	}
+@-o-keyframes my_an_2{
+	0%{transform:translate(0px,0x);}
+	50%{transform:translate(30px,0px);}
+	100%{transform:translate(0px,0x);}
+	}
+.schedule_box_left>div{
+	width:98px;
+	height:103px;
+	margin-top:70px;
+	margin-bottom:32px;
+	background:url(../images/schedule_icon1.png)
+	}
+.schedule_box_left>a:hover{
+	color:#fff;
+	}
+.schedule_box_left>p{
+	font-size:18px;
+	}
+.schedule_box_right{
+	width:577px;   /*579-2*/
+	height:330px;  /*332-2*/
+	border:1px solid #ccc;
+	background:#FFF;
+	margin-top:50px;
+	text-align:center;
+	line-height:36px;
+	font-size:30px;
+	color:#666;
+	}
+.schedule_box_right:hover{
+	animation:my_an_3 0.5s linear 0s;
+	cursor:pointer;
+	}
+@keyframes my_an_3{
+	0%{transform:translate(0px,0px);}	
+	50%{transform:translate(-30px,0px);}
+	100%{transform:translate(0px,0px);}
+	}
+@-moz-keyframes my_an_3{
+	0%{transform:translate(0px,0px);}	
+	50%{transform:translate(-30px,0px);}
+	100%{transform:translate(0px,0px);}
+	}
+@-webkit-keyframes my_an_3{
+	0%{transform:translate(0px,0px);}	
+	50%{transform:translate(-30px,0px);}
+	100%{transform:translate(0px,0px);}
+	}
+@-o-keyframes my_an_3{
+	0%{transform:translate(0px,0px);}	
+	50%{transform:translate(-30px,0px);}
+	100%{transform:translate(0px,0px);}
+	}
+.schedule_box_right>div{
+	width:106px;
+	height:105px;
+	margin-top:70px;
+	margin-bottom:32px;
+	background:url(../images/schedule_icon2.png);
+	}
+.schedule_box_right>a:hover{
+	color:#666;
+	}
+.schedule_box_right>p{
+	font-size:18px;
+	}
+footer{
+	width:100%;
+	height:90px;
+	font-size:14px;
+	color:#fff;
+	text-align:center;
+	line-height:90px;
+	background:#92211b;
+	}
+	
+/*在线预定详情页*/	
+.onlineBook{
+	width:100%;
+	height:370px;
+	background:#fbf9ed;
+	}
+.onlineBook_box{
+	width:1200px;
+	background:#fff;
+	}
+.onlineBook_box_left{
+	width:458px;
+	height:306px;
+	background:url(../images/onlineBook_pic.png);
+	margin-top:30px;
+	}
+.onlineBook_box_right{
+	width:691px;
+	height:306px;
+	margin-top:30px;
+	margin-right:8px;
+	}
+.onlineBook_box_right>h4{
+	font-size:22px;
+	}
+	
+.price{
+	width:280px;
+	height:26px;
+	line-height:26px;  
+	margin:38.5px 0;	
+	}
+.price>ul{
+	width:280px;	
+	display:flex;
+	justify-content:space-between;    /*区别space-around;，around会左右留一点点*/
+	}
+.adult>span{
+	color:#f15e0d;
+	font-size:26px;
+	}
+.child>span{
+	color:#333;
+	}
+.number_select{
+	width:500px;  /*690-2*/
+	height:70px;  /*176-2*/
+	line-height:70px;
+	margin-left:16px;	
+	}
+select{
+	width:70px;
+	height:25px;
+	border:1px solid #f15e0d;
+	outline:none;	
+	}	
+.number_people{
+	width:690px;  /*690-2*/
+	height:40px;  /*176-2*/
+	}
+.number_people>ul{
+	width:430px;	
+	display:flex;
+	justify-content:space-between;    /*区别space-around;，around会左右留一点点*/
+	}
+#minus{
+	width:28px;
+	height:29px;
+	}
+#add{
+	width:28px;
+	height:29px;
+	}
+#count{
+	width:42px;
+	height:29px;
+	text-align:center;
+	}
+#minusOne{
+	width:28px;
+	height:29px;
+	}
+#addOne{
+	width:28px;
+	height:29px;
+	}
+#countOne{
+	width:42px;
+	height:29px;
+	text-align:center;
+	}
+.book_now{
+	width:129px;
+	height:38px;
+	display:block;
+	background:#f15e0d;
+	text-align:center;
+	line-height:38px;
+	margin-top:10px;
+	border-radius:4px;
+	color:#fff;
+	margin-left:281px;
+	}
+.book_now:hover{
+	color:#fff;
+	}
+
+.data_price{
+	width:100%;
+	height:350px;
+	background:#fbf9ed;
+	}
+.data_price_box{
+	width:1200px;
+	}
+.b1{
+	width:500px;
+	height:300px;
+	text-align:center;
+	background:#FFF;
+	}
+.name0{
+	color:#b10501;
+	}
+.data_price p{
+	font-size:12px;
+	color:#f15e0d;
+	}
+.data_price span{
+	font-weight:bold;
+	color:#b10501;
+	}
+

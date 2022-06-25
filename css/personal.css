@@ -1,0 +1,206 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+/*荣誉证书例表页*/
+.main{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+.right{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f5f5f5;
+}
+.right>p{
+    line-height: 50px;
+}
+.controls{
+    display: flex;
+    flex-wrap: wrap;   /*换行*/
+    justify-content: space-between;
+}
+.controls li{
+    width: 24rem;
+    height: 28rem;
+    margin-bottom: 60px;
+}
+.controls li figure{
+    width: 24rem;
+    height: 24rem;
+    background-color: #e6f0f9;
+    overflow: hidden;
+}
+.controls li figcaption{
+    height: 4rem;
+    line-height: 4rem;
+    background: #e6f0f9;
+    text-align: center;
+}
+.controls li img{
+    transition:all 0.2s;
+}
+.controls  li figure::after{
+    position: absolute;
+    top: 0;
+}
+.controls li:hover img{
+    transform:scale(1.2,1.2);
+}
+/*作品-appUI/作品-webDesign*/
+span{
+    color: #f59c28;
+    font-weight: bold;
+}
+.webDesign{
+    display:flex;
+    justify-content:space-between;  /*主轴，也就是横向间距均分*/
+    align-content:space-between;    /*副轴，也就是纵向间距均分*/
+    flex-wrap:wrap;
+    text-align: center;
+    font-size: 20px;
+}
+.webDesign>li{
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*图标设计列表页*/
+.controlsIcon{
+    display: flex;
+    flex-wrap: wrap;   /*换行*/
+    justify-content: space-between;
+}
+.controlsIcon li{
+    width: 24rem;
+    height: 28rem;
+    margin-bottom: 60px;
+}
+.controlsIcon li figure{
+    width: 24rem;
+    height: 24rem;
+    background-color: #e6f0f9;
+    overflow: hidden;
+}
+.controlsIcon li figcaption{
+    height: 4rem;
+    line-height: 4rem;
+    background: #e6f0f9;
+    text-align: center;
+}
+.controlsIcon li img{
+    transition:all 0.2s;
+}
+.controlsIcon  li figure::after{
+    position: absolute;
+    top: 0;
+}
+.controlsIcon li:hover img{
+    transform:scale(1.2,1.2);
+}
+/*APP设计列表页*/
+.controlsApp{
+    display: flex;
+    flex-wrap: wrap;   /*换行*/
+    justify-content: space-between;
+}
+.controlsApp li{
+    width: 24rem;
+    height: 41rem;
+    margin-bottom: 60px;
+}
+.controlsApp li figure{
+    width: 24rem;
+    height: 37rem;
+    background-color: #e6f0f9;
+    overflow: hidden;
+}
+.controlsApp li figcaption{
+    height: 4rem;
+    line-height: 4rem;
+    background: #e6f0f9;
+    text-align: center;
+}
+.controlsApp li img{
+    transition:all 0.2s;
+}
+.controlsApp  li figure::after{
+    position: absolute;
+    top: 0;
+}
+.controlsApp li:hover img{
+    transform:scale(1.2,1.2);
+}
+/*商业项目列表页*/
+.controlsBusiness {
+    display: flex;
+    flex-wrap: wrap;   /*换行*/
+    justify-content: space-between;
+}
+.controlsBusiness li{
+    width: 24rem;
+    height: 18rem;
+    margin-bottom: 60px;
+}
+.controlsBusiness li figure{
+    width: 24rem;
+    height: 14rem;
+    background-color: #e6f0f9;
+    overflow: hidden;
+}
+.controlsBusiness li figcaption{
+    height: 4rem;
+    line-height: 4rem;
+    background: #e6f0f9;
+    text-align: center;
+}
+.controlsBusiness li img{
+    transition:all 0.2s;
+}
+.controlsBusiness li figure::after{
+    position: absolute;
+    top: 0;
+}
+.controlsBusiness li:hover img{
+    transform:scale(1.2,1.2);
+}
+
+/*其他设计*/
+.controlsOther {
+    display: flex;
+    flex-wrap: wrap;   /*换行*/
+    justify-content: space-between;
+}
+.controlsOther li{
+    width: 24rem;
+    height: 23rem;
+    margin-bottom: 60px;
+}
+.controlsOther li figure{
+    width: 24rem;
+    height: 19rem;
+    background-color: #e6f0f9;
+    overflow: hidden;
+}
+.controlsOther li figcaption{
+    height: 4rem;
+    line-height: 4rem;
+    background: #e6f0f9;
+    text-align: center;
+}
+.controlsOther li img{
+    transition:all 0.2s;
+}
+.controlsOther li figure::after{
+    position: absolute;
+    top: 0;
+}
+.controlsOther li:hover img{
+    transform:scale(1.2,1.2);
+}
