@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0 auto;
+	padding:0px;
+	}
+ul,li{
+	list-style:none;
+	}
+a{
+	color:#a8a8a8;
+	text-decoration:none;
+	}
+a:hover{
+	color:#f00;
+	}
+body{
+	font-family:"宋体";
+	font-size:14px;
+	color:#333;
+	}
+.f_left{
+	float:left;}
+.f_right{
+	float:right;}
+.f_clear{
+	clear:both;
+	width:0px;
+	height:0px;
+	font-size:0px;}
+
+
+
+
+
+
+
