@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, intial-scale=1, max-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<!-- Stylesheets
+============================================= -->
+<link href="css/css-assets.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,600i,700,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700i,700" rel="stylesheet">
+<link rel="stylesheet" href="https://www.jq22.com/jquery/font-awesome.4.7.0.css">
+<!-- Title
+============================================= -->
+<title>姓名 website</title>
+</head>
+<style>
+	ul,li,ol{
+		list-style: none;
+	}
+	/*荣誉奖状*/
+	.honorary{
+		display: block;
+		line-height: 46px;
+		background-color: #a6bee0;
+		font-size: 18px;
+		color: #fff;
+		height: 226px;
+	}
+	.zscenter{
+		background-color: #ffffff;
+		text-align: center;
+		height: 226px;
+		line-height: 25px;
+		padding-top: 70px;
+	}
+	/*导航*/
+	.nav{
+		width: 100%;
+		height: 38px;
+		font-size: 18px;
+		position: relative;
+		z-index: 9999;
+	}
+	.section{
+		width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+	}
+	.nav_section{
+		height: 38px;
+	}
+	/*一级导航，相对定位 盖*/
+	.nav_ul>li{
+		float: right;
+		line-height: 38px;
+		position: relative;
+	}
+	.nav_ul>li>a{
+		color: #333;
+		display: block;
+		padding-left: 36px;
+		padding-right: 36px;
+		transition: all 0.2s;  /* 过渡动画 */
+	}
+	.nav_ul>li:hover>a{
+		border-bottom:3px solid #2699ff;
+		color: #2699ff;
+		text-decoration: none;
+	}
+	/*二级导航，绝对定位 管*/
+	.submenu{
+		position: absolute;  /* 绝对定位 ， poa */
+		width: 106px;
+		background: #FFFFFF;
+		font-size: 16px;
+		line-height: 40px;
+		top: 41px;  /*根据导航高度而来*/
+		left: 50% ;  /*一般为50%*/
+		margin-left: -53px;  /*为了让在正中间，左移二级菜单宽度的一半*/
+		display: none;  /* dn 隐藏，页面不会渲染它*/
+		border-radius: 10px;
+		box-shadow: 2px 2px  20px  #dadada;
+	}
+	.submenu a{
+		color: #2699ff;
+		display: block;
+		text-align: center;
+		transition: all 0.2s;  /* 过渡动画 */
+	}
+	.submenu a:hover{
+		color: #f59c28;
+		text-decoration: none;
+	}
+	a{
+		color:inherit;
+		text-decoration:none;
+	}
+	a:hover{
+		color:#333;
+		text-decoration:none;
+		cursor: pointer;
+	}
+	.jianju{
+		padding-top: 30px;
+	}
+</style>
+<body>
+
+<!-- Document Full Container
+============================================= -->
+<div id="full-container">
+
+	<!-- Header
+	============================================= -->
+	<header id="header">
+		<div id="header-bar-1" class="header-bar">
+			<div class="header-bar-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<nav  id="nav" class="nav">
+								<div class="section nav_section">
+									<ul class="nav_ul f_right" id="navUl">
+										<li  id="nav5" value="5"><a href="#signup-now">联系</a></li>
+										<li  id="nav4" value="4"><a href="list/honor.html">荣誉</a></li>
+										<li  id="nav3" value="3"><a href="">作品</a>
+											<ul class="submenu">
+												<li><a href="list/app.html">APP设计</a></li>
+												<li><a href="list/icon.html">图标设计</a></li>
+												<li><a href="list/business.html">商业项目</a></li>
+												<li><a href="list/other.html">其他设计</a></li>
+												<li><a href="list/webDesign.html">网页设计</a></li>
+												<li><a href="list/webMake.html">网页制作</a></li>
+											</ul>
+										</li>
+										<li  id="nav2" value="2"><a href="#content">关于</a></li>
+										<li  id="nav1" value="1"><a href="">首页</a></li>
+									</ul>
+								</div>
+							</nav>
+						</div><!-- .col-md-12 end -->
+					</div><!-- .row end -->
+				</div><!-- .container end -->
+			</div><!-- .header-bar-wrap -->
+		</div><!-- #header-bar-1 end -->
+	</header><!-- #header end -->
+
+	<!-- Banner
+	============================================= -->
+	<section id="banner">
+		<div class="banner-parallax" data-banner-height="800">
+			<img src="images/files/parallax-bg/img-1.jpg" alt="">
+			<!-- <div class="overlay-colored color-bg-white opacity-80"></div>.overlay-colored end -->
+			<div class="slide-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="banner-center-box md-text-center">
+								<h1>
+									<!-- <img src="images/files/name.png"> -->
+									姓名
+								</h1>
+								<hr/>
+								<div class="description">
+									<div style="border:1px solid #2699ff"></div>
+									欢 迎 来 到 我 的 个 人 网 页 ，记 录 点 滴<br>
+									Welcome to my personal website,record some drops
+								</div>
+								<!--<a class="btn scroll-to gradient x-large colorful hover-colorful-darken mt-40" href="#signup-now">Call to Action</a>-->
+							</div><!-- .banner-center-box end -->
+						</div><!-- .col-md-6 end -->
+						<div class="col-md-6">
+							<div class="banner-center-box md-text-center">
+								<img class="mt-md-30" src="images/files/illustrator-featured-img-1.png" alt="Featured Image">
+							</div><!-- .banner-center-box end -->
+						</div><!-- .col-md-6 end -->
+					</div><!-- .row end -->
+				</div><!-- .container end -->
+			</div><!-- .slide-content end -->
+		</div><!-- .banner-parallax end -->
+	</section><!-- #banner end -->
+
+	<!-- Content
+	============================================= -->
+	<section id="content">
+		<div id="content-wrap">
+			<!-- === 关于
+			 ================================= -->
+			<div id="intro-features" class="flat-section">
+				<div class="section-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="slider-boxes-features">
+									<ul class="owl-carousel">
+										<li>
+											<div class="slide">
+												<div class="box-info box-info-2 text-center">
+													<div class="box-icon icon"><img src="images/files/emg1.png"></div>
+													<div class="box-content">
+														<h4>基本简介</h4>
+														<p>姓名：姓名<br>
+															性别：赵一行<br>
+															体重：70公斤 <br>
+															 </p>
+													</div><!-- .box-content end -->
+												</div><!-- .box-info end -->
+											</div><!-- .slide end -->
+										</li>
+										<li>
+											<div class="slide">
+												<div class="box-info box-info-2 text-center">
+													<div class="box-icon icon"><img src="images/files/emg2.png"></div>
+													<div class="box-content">
+														<h4>教育背景</h4>
+														<p><br>
+															<br>
+															web前端开发
+														</p>
+													</div><!-- .box-content end -->
+												</div><!-- .box-info end -->
+											</div><!-- .slide end -->
+										</li>
+										<li>
+											<div class="slide">
+												<div class="box-info box-info-2 text-center">
+													<div class="box-icon icon"><img src="images/files/emg3.png"></div>
+													<div class="box-content">
+														<h4>自我评价</h4>
+														<p>思想上：坚持拥护中国共产党，时刻规范自己<br>
+															学习上：刻苦学习，努力培养自己分析问题解和决问题
+															的能力，并且有良好的团队意识<br>
+															生活上：本人乐于助人，与同学相处融洽
+
+														</p>
+													</div><!-- .box-content end -->
+												</div><!-- .box-info end -->
+											</div><!-- .slide end -->
+										</li>
+									</ul>
+								</div><!-- .slider-boxes-features end -->
+							</div><!-- .col-sm-12 end -->
+							<hr class="divider-line space-100">
+							<!-- === 作品
+                             ================================= -->
+							<div class="col-md-6">
+								<div class="section-title">
+									<h2>作品</h2>
+									<span><a href="list/app.html">APP设计</a>、<a href="list/icon.html">图标设计</a>、<a href="list/business.html">商业项目</a>、<a href="list/other.html">其他设计</a></span>
+								</div><!-- .section-title end -->
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="box-info box-info-1 mb-sm-40">
+											<div class="box-icon icon"><a href="list/app.html"><i class="flaticon-share"></i></a></div>
+											<div class="box-content">
+												<h4><a href="list/app.html">APP设计</a></h4>
+												<p>该板块是项目"蔓心蛋糕"的app设计图，包揽了首页、详情页、内容页以及我的</p>
+											</div><!-- .box-content end -->
+										</div><!-- .box-info end -->
+									</div><!-- .col-sm-6 end -->
+									<div class="col-sm-6">
+										<div class="box-info box-info-1">
+											<div class="box-icon icon"><a href="list/icon.html"><i class="flaticon-internet"></i></a></div>
+											<div class="box-content">
+												<h4><a href="list/icon.html">图标设计</a></h4>
+												<p>该板块包括了剪影图标、线描图标、微质感图标以及建筑物图标</p>
+											</div><!-- .box-content end -->
+										</div><!-- .box-info end -->
+									</div><!-- .col-sm-6 end -->
+									<div class="col-sm-6 jianju">
+										<div class="box-info box-info-1">
+											<div class="box-icon icon"><a href="list/business.html"><i class="flaticon-database-3"></i></a></div>
+											<div class="box-content">
+												<h4><a href="list/business.html">商业项目</a></h4>
+												<p>该板块是商业项目：乒乓江湖、兼职网的设计图</p>
+											</div><!-- .box-content end -->
+										</div><!-- .box-info end -->
+									</div><!-- .col-sm-6 end -->
+									<div class="col-sm-6 jianju">
+										<div class="box-info box-info-1">
+											<div class="box-icon icon"><a href="list/other.html"><i class="flaticon-idea"></i></a></div>
+											<div class="box-content">
+												<h4><a href="list/other.html">其他设计</a></h4>
+												<p>该板块主要是比赛的设计图以及其他设计稿</p>
+											</div><!-- .box-content end -->
+										</div><!-- .box-info end -->
+									</div><!-- .col-sm-6 end -->
+								</div><!-- .row end -->
+							</div><!-- .col-md-6 end -->
+							<div class="col-md-6 text-right md-text-left">
+								<img class="mt-md-60" src="images/files/illustrator-featured-img-2.png" alt="">
+							</div><!-- .col-md-6 end -->
+							<hr class="divider-line space-100">
+							<div class="col-md-6 col-md-push-6">
+								<div class="section-title">
+									<h2>作品</h2>
+									<span><a href="list/webDesign.html">网页设计</a>与<a href="list/webMake.html">网页制作</a></span>
+								</div><!-- .section-title end -->
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="box-info box-info-1 mb-sm-40">
+											<div class="box-icon icon"><a href="list/webDesign.html"><i class="flaticon-star"></i></a></div>
+											<div class="box-content">
+												<h4><a href="list/webDesign.html">网页设计</a></h4>
+												<p>该板块是一些电商网站、旅游网站、企业网站的设计图</p>
+											</div><!-- .box-content end -->
+										</div><!-- .box-info end -->
+									</div><!-- .col-sm-6 end -->
+									<div class="col-sm-6">
+										<div class="box-info box-info-1">
+											<div class="box-icon icon"><a href="list/webMake.html"><i class="flaticon-success"></i></a></div>
+											<div class="box-content">
+												<h4><a href="list/webMake.html">网页制作</a></h4>
+												<p>主要运用了HTML、CSS、JavaScript等技术对网页设计图进行实现</p>
+											</div><!-- .box-content end -->
+										</div><!-- .box-info end -->
+									</div><!-- .col-sm-6 end -->
+								</div><!-- .row end -->
+							</div><!-- .col-md-6 end -->
+							<div class="col-md-6 col-md-pull-6">
+								<img class="mt-md-60" src="images/files/illustrator-featured-img-3.png" alt="">
+							</div><!-- .col-md-6 end -->
+						</div><!-- .row end -->
+					</div><!-- .container end -->
+				</div><!-- .section-content end -->
+			</div><!-- .flat-section end -->
+	
+			<!-- 荣誉证书
+			====================================== -->
+			<div id="clients-testimonials" class="parallax-section">
+				<img src="images/files/parallax-bg/img-1.jpg" alt="">
+				<div class="section-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2">
+								<div class="section-title text-center">
+									<h2>荣誉证书</h2>
+								</div><!-- .section-title end -->
+							</div><!-- .col-md-8 end -->
+							<div class="container">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="fb-row">
+											<div class="col-sm-2">
+												<div class="box-info box-info-3 text-center">
+													<div class="box-content">
+														<a href="list/honor.html"><span class="honorary">
+														H o n o<br>
+														r a r y<br>
+														c e r t<br>
+														i  f  i c<br>
+														a t e
+														</span></a>
+													</div><!-- .box-content end -->
+												</div><!-- .box-info end -->
+											</div><!-- .col-sm-2 end -->
+											<div class="col-sm-5">
+												<div class="box-info box-info-3 text-center ">
+													<div class="box-content zscenter">
+														<h2><a href="list/honor.html">荣誉证书</a></h2>
+														<a href="list/honor.html">点击查看更多</a>
+													</div><!-- .box-content end -->
+												</div><!-- .box-info end -->
+											</div><!-- .col-sm-5 end -->
+											<div class="col-sm-5">
+												<div class="box-info box-info-3 text-center">
+													<div class="box-content zsright">
+														<img src="images/files/zhengshu.png">
+													</div><!-- .box-content end -->
+												</div><!-- .box-info end -->
+											</div><!-- .col-sm-5 end -->
+										</div><!-- .fb-row end -->
+									</div><!-- .col-md-12 end -->
+								</div><!-- .row end -->
+							</div><!-- .col-md-6 end -->
+						</div><!-- .row end -->
+					</div><!-- .container end -->
+				</div><!-- .section-content end -->
+			</div><!-- .parallax-section end -->
+
+			<!-- 联系方式
+			============================================= -->
+			<div id="signup-now" class="flat-section">
+				<div class="section-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2">
+								<div class="section-title text-center">
+									<h2>联系方式</h2>
+									<p>
+										这里是我的个人网页， 这里有我的成长记录，我的喜怒哀乐，作为一名数字大数据专业的同学，我热爱Web前端开发 ，
+										将来立志做一名优秀的互联网技术人员，我热爱我的专业，期待您的联系。
+									</p>
+								</div><!-- .section-title end -->
+							</div><!-- .col-md-8 end -->
+							<div class="container">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="fb-row">
+											<div class="col-sm-3">
+												<div class="box-info box-info-3 text-center mb-sm-50">
+													<div class="box-content">
+														<h4>电话</h4>
+														<p>
+															1234567890
+														</p>
+													</div><!-- .box-content end -->
+												</div><!-- .box-info end -->
+											</div><!-- .col-sm-3 end -->
+											<div class="col-sm-6">
+												<div class="box-info box-info-3 text-center mb-sm-50">
+													<div class="box-content">
+														<h4>邮箱</h4>
+														<p>
+															1234567890@qq.com
+														</p>
+													</div><!-- .box-content end -->
+												</div><!-- .box-info end -->
+											</div><!-- .col-sm-6 end -->
+											<div class="col-sm-3">
+												<div class="box-info box-info-3 text-center">
+													<div class="box-content">
+														<h4>QQ</h4>
+														<p>
+															QQ1234567890
+														</p>
+													</div><!-- .box-content end -->
+												</div><!-- .box-info end -->
+											</div><!-- .col-sm-3 end -->
+										</div><!-- .fb-row end -->
+									</div><!-- .col-md-12 end -->
+								</div><!-- .row end -->
+							</div><!-- .col-md-6 end -->
+						</div><!-- .row end -->
+					</div><!-- .container end -->
+				</div><!-- .section-content end -->
+			</div><!-- .flat-section end -->
+		</div><!-- #content-wrap -->
+	</section><!-- #content end -->
+	<!-- Footer
+	============================================= -->
+	<footer id="footer">
+		<div id="footer-bar-2" class="footer-bar">
+			<div class="footer-bar-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="fb-row">
+								<div class="copyrights-message">Copyright &copy;姓名 personal website.</div>
+							</div><!-- .fb-row end -->
+						</div><!-- .col-md-12 end -->
+					</div><!-- .row end -->
+				</div><!-- .container end -->
+			</div><!-- .footer-bar-wrap -->
+		</div><!-- #footer-bar-2 end -->
+	</footer><!-- #footer end -->
+</div><!-- #full-container end -->
+<a class="scroll-top-icon scroll-top" href="#"><i class="fa fa-arrow-up"></i></a>
+
+<!-- External JavaScripts
+============================================= -->
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/jRespond.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/jquery.stellar.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.mb.YTPlayer.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/simple-scrollbar.min.js"></script>
+<script src='js/functions.js'></script>
+
+</body>
+<script>
+    {
+        let navUl = document.getElementById("navUl");
+        let li = navUl.children;   //通过一级导航ul的子标签navUl.children找li
+        for (let i = 0; i <= li.length - 1; i++) {
+            li[i].addEventListener("mouseenter", function (event) {
+                let nowLi = event.currentTarget;  //当前的li（一级导航的li）
+                let ul = nowLi.children[1];   //一级导航的li下二级导航ul的索引为1
+                if (!ul) {
+                    return false;
+                }
+                // 显示标签
+                ul.style.display = "block";
+            });
+            li[i].addEventListener("mouseleave", function (event) {
+                let nowLi = event.currentTarget;
+                let ul = nowLi.children[1];
+                if (!ul) {
+                    return false;
+                }
+                // 隐藏
+                ul.style.display = "none";
+            });
+        }
+    }
+</script>
+</html>
